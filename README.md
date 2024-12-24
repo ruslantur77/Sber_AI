@@ -1,6 +1,6 @@
 Sber stock price prediction
 
-This project is a web application built with Python, Tensorflow and Flask that predicts stock prices based on historical data.
+This project is a web application built with Python, Tensorflow and Flask that predicts stock price on Sber based on historical data.
 
 To get started with this project, follow these steps:
 
