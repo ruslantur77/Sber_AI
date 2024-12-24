@@ -2,7 +2,7 @@ Sber stock price prediction
 
 This project is a web application built with Python, Tensorflow and Flask that predicts stock price on Sber based on historical data.
 
-You can see in ./model/model_to_learn.py model which learns from MOEX data set of 17 years trading $SBER:MOEX Stock
+You can see in Sber_AI/model/model_to_learn.py model which learns from MOEX data set of 17 years trading $SBER:MOEX Stock
 
 To get started with this project, follow these steps:
 
