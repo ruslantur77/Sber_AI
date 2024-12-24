@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сбер – предсказание на цену акций с помощью ИИ </title>
+    <link href="{{ url_for('static', filename='main.css') }}" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" >
+    <script src="{{ url_for('static', filename='core.js') }}" defer></script> 
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/sber.png') }}">
+
+
+</head>
+
+<style>
+    body{
+        background-color: #131722;
+    }
+</style>
+
+
+
+<body>  
+<h2><img src="{{ url_for('static', filename='images/sber.png') }}" style="width: 1em; vertical-align: baseline;">
+    Сбер</h2>
+
+    <div>
+        <script type="text/javascript" src="https://beststocks.ru/widget.js" async></script>
+        <a href="https://beststocks.ru/rustock/sber" title="Котировка акций  СберБанк" style="visibility:hidden;font-size:0;"></a>
+        <iframe
+          data-bs-widget
+          id="ru:sber-frame-9698257864"
+          title="RU:SBER Frame"
+          sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
+          scrolling="no"
+          style="width: 100%; min-width: 320px; border: none;"
+          src="https://beststocks.ru/widget/ru:sber?id=ru:sber-frame-9698257864"
+        ></iframe>
+      </div>
+      
+
+<h2 id="stocks-sber"></h2>
+    <h2>Предсказанная цена Сбера через 1 день:
+    <button id="generate-button-1">Узнать</button>
+    <span id="text-message-1" style="display: none;">{{ tomorrow }}</span>
+</h2>
+
+    <h2>Предсказанная цена Сбера через 1 неделю:
+    <button id="generate-button-7">Узнать</button>  
+    <span id="text-message-7" style="display: none;">{{ week }}</span>
+</h2>
+
+    <h2>Предсказанная цена Сбера через 1 месяц: 
+    <button id="generate-button-30">Узнать</button>
+    <span id="text-message-30" style="display: none;">{{ month }}</span>
+</h2>
+
+    <h2>Предсказанная цена Сбера через 1 Q:
+    <button id="generate-button-90">Узнать</button>
+    <span id="text-message-90" style="display: none;">{{ quater }}</span>
+</h2>
+
+
+
+
+<H2></H2>
+<h5 style="padding-right: 20px;">
+    Дисклеймер: все вышеперечисленное на сайте не является индивидуальной инвестиционной рекомендацией.<br>
+    Сайт носит лишь исключительно информационно-аналитический характер и не должен рассматриваться как предложение либо рекомендация к инвестированию, покупке, продаже какого-либо актива, торговых операций по финансовым инструментам.<br>
+    Инвестиции связаны с рисками.
+</h5>
+
+
+
+</body>
+</html>
